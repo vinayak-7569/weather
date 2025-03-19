@@ -1,0 +1,114 @@
+ /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Weather App Container */
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Input Field */
+input {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Buttons */
+button {
+    width: 90%;
+    padding: 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ff9800;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+/* Weather Result Card */
+.weather-card {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.weather-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+/* Weather Icons */
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+    .container {
+        width: 95%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
